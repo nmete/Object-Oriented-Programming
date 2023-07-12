@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class EmployeeDao {
@@ -17,17 +18,24 @@ public class EmployeeDao {
         return employeeRepositary.save(employee);
     }
 
-    public Employee updateEmployee(Employee employee){
-        return employeeRepositary.save(employee);
+    public Employee updateEmployee(Employee employee, int id){
+
+        if(employeeRepositary.findById(id).isEmpty()){
+            return null;
+        }else{
+            employee.setId(id);
+            return employeeRepositary.save(employee);
+        }
+
+       // return employeeRepositary.save(employee);
     }
-    public Employee getEmployeeById(int id){
-        return employeeRepositary.findById(id).get();
+    public Optional<Employee> getEmployeeById(int id){
+        return employeeRepositary.findById(id);
     }
 
-    public Employee deleteEmployee(int id){
-        Employee emp=getEmployeeById(id);
-        employeeRepositary.delete(emp);
-        return emp;
+    public Employee deleteEmployee(Employee employee){
+        employeeRepositary.delete(employee);
+        return employee;
     }
 
     public List<Employee> getAllEmployee(){

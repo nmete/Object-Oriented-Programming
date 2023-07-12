@@ -3,7 +3,9 @@ package com.cl.Employee_management.controller;
 import com.cl.Employee_management.dao.EmployeeDao;
 import com.cl.Employee_management.dto.Employee;
 import com.cl.Employee_management.service.EmployeeService;
+import com.cl.Employee_management.util.ResponseStucture;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,27 +16,27 @@ public class EmployeeController {
     EmployeeService employeeService;
 
     @PostMapping("/save")
-    public Employee saveEmployee(@RequestBody Employee employee){
+    public ResponseEntity<ResponseStucture<Employee>> saveEmployee(@RequestBody Employee employee){
           return employeeService.saveEmployee(employee);
     }
 
-    @PostMapping("/update")
-    public Employee updateEmployee(@RequestBody Employee employee){
-        return employeeService.updateEmployee(employee);
+    @PutMapping("/update")
+    public ResponseEntity<ResponseStucture<Employee>>  updateEmployee(@RequestBody Employee employee, @RequestParam int id){
+        return employeeService.updateEmployee(employee, id);
     }
 
     @DeleteMapping("/delete")
-    public Employee deleteEmployee(@RequestParam int id){
+    public ResponseEntity<ResponseStucture<Employee>> deleteEmployee(@RequestParam int id){
         return employeeService.deleteEmployee(id);
     }
 
     @GetMapping("/findall")
-    public List<Employee> findAllEmployee(){
+    public ResponseEntity<ResponseStucture<List<Employee>>>  findAllEmployee(){
         return employeeService.findAllEmployee();
     }
 
     @GetMapping("/getbyid/{id}")
-    public Employee getEmployee(@PathVariable int id){
+    public ResponseEntity<ResponseStucture<Employee>>  getEmployee(@PathVariable int id){
         return employeeService.getEmployee(id);
     }
 }
