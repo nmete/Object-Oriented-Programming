@@ -4,16 +4,32 @@ package org.example;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Student [] students= new Student[4];
+         Student s1= new Student(12,  "neha");
+        Student s2= new Student(13,  "neha");
+        Student s3= new Student(14,  "neha");
+        Student s4= new Student(15,  "neha");
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        System.out.println(s1.toString());
+       Integer a=10;
+       Integer b=0;
+       a=b;
+        System.out.println("a = "+
+                a);
+       a= 100;
+        System.out.println(a);
+        System.out.println(a);
     }
+}
+
+class Student{
+    int rollno;
+    String name;
+    Student(int rollno, String name){
+        this.rollno= rollno;
+        this.name= name;
+    }
+
+
 }
