@@ -5,25 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e7e357c-24da-462f-818b-3ea35d78f35a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Inheritance/Base.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Inheritance/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Inheritance/child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Inheritance/child2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Inheritance/child3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Inheritance/multipleInherience.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MainClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PolyMorphism/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PolyMorphism/Shapes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PolyMorphism/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PolyMorphism/Trigle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SingleTon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticpackage/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticpackage/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/staticpackage/StaticInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/wrapper/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/abstraction/Dauter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/abstraction/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/abstraction/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/abstraction/Son.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/access/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/access/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/access/ObjectDeno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfacepack/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfacepack/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfacepack/Break.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfacepack/BreakClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfacepack/C.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfacepack/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfacepack/EnginClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfacepack/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfacepack/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfacepack/Media.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfacepack/MediaClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/interfacepack/NiceCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +34,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -53,7 +55,7 @@
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/HP/Desktop/Object Oriented Pragramming/Opps/src/main/java/org/example/Main.java&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.org.example.interfacepack.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.wrapper.Main" />
       <module name="Opps" />
@@ -67,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.MainClass" />
+    <configuration name="ObjectDeno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.access.ObjectDeno" />
       <module name="Opps" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.access.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaticInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.staticpackage.StaticInteger" />
+    <configuration name="org.example.abstraction.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.abstraction.Main" />
       <module name="Opps" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.staticpackage.*" />
+          <option name="PATTERN" value="org.example.abstraction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.Inheritance.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Inheritance.Main" />
+    <configuration name="org.example.access.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.access.Main" />
       <module name="Opps" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.Inheritance.*" />
+          <option name="PATTERN" value="org.example.access.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.PolyMorphism.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.PolyMorphism.Main" />
+    <configuration name="org.example.interfacepack.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.interfacepack.Main" />
       <module name="Opps" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.PolyMorphism.*" />
+          <option name="PATTERN" value="org.example.interfacepack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.org.example.interfacepack.Main" />
+        <item itemvalue="Application.org.example.abstraction.Main" />
+        <item itemvalue="Application.ObjectDeno" />
+        <item itemvalue="Application.org.example.access.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.org.example.PolyMorphism.Main" />
-        <item itemvalue="Application.org.example.Inheritance.Main" />
-        <item itemvalue="Application.MainClass" />
-        <item itemvalue="Application.StaticInteger" />
       </list>
     </recent_temporary>
   </component>
@@ -152,6 +154,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/MainClass.java</url>
           <line>6</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/abstraction/Son.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
