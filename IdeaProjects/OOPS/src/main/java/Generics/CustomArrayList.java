@@ -1,17 +1,18 @@
 package Generics;
 
 import java.util.Arrays;
+import java.util.Objects;
 
-public class CustomArrayList {
-    private int []data;
+public class CustomArrayList<T> {
+    private Object[]data;
     private static int default_size=10;
     int size=0;
 
     CustomArrayList(){
-        data = new int[default_size];
+        data = new Object[default_size];
     }
 
-    public void add(int num){
+    public void add(T num){
         if(isFull()){
             resize();
         }
@@ -19,7 +20,7 @@ public class CustomArrayList {
     }
 
     void resize(){
-        int temp[]= new int[data.length*2];
+        Object temp[]= new Object[data.length*2];
 
         for(int i=0;i< data.length;i++){
             temp[i] = data[i];
@@ -31,13 +32,13 @@ public class CustomArrayList {
        return size == data.length;
     }
 
-    public int remove(){
-        int num= data[--size];
+    public T remove(){
+        T num= (T)data[--size];
         return num;
     }
 
-    public int get(int index){
-        return data[index];
+    public T get(int index){
+        return (T)data[index];
     }
 
     public int size(){
@@ -61,7 +62,7 @@ public class CustomArrayList {
         CustomArrayList a= new CustomArrayList();
         a.add(12);
         a.add(23);
-        a.add(78);
+        a.add("aesfcaef");
 
         for(int i=0;i<a.size();i++) {
             System.out.println(a.get(i));

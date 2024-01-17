@@ -12,7 +12,7 @@ public class Exception1{
     public static void main(String[] args) throws Exception {
         final int a=100;
         try {
-            arith();
+             throw new MyExceptions("hahah");
         }catch (Exception e){
             System.out.println(e);
         }finally {
@@ -24,7 +24,6 @@ public class Exception1{
         if(a==100){
             throw new Exception("Throwing custom exception");
         }
-
     }
 
     static void arith() throws Exception{
